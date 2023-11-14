@@ -3,10 +3,10 @@
           <code><strong>The purpose of making this application is to familiarize with the following:</strong></code>
 <ul>
     <li>
-         Material design training (making a snack bar)
+         Material design training (making a snack bar).
     </li>
     <li>
-         Creating a splash screen and making the program full screen.
+         Teaching test design in Java language.
     </li>
     <li>
          Creating a multilingual program.
