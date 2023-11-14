@@ -12,7 +12,7 @@
         How to make a Timer in Android Studio.
     </li>
     <li>
-         Creating a Scroll view in the program
+        Teaching how to sign the program and exit from it.
     </li>
   <li>
          Creating the Assets folder and changing the font of the texts
