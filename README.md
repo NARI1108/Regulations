@@ -15,7 +15,7 @@
         Teaching how to sign the program and exit from it.
     </li>
   <li>
-         Creating the Assets folder and changing the font of the texts
+        Intent training (contact us via Telegram section).
   </li>
 </ul>
 
