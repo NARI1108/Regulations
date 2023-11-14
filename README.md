@@ -9,7 +9,7 @@
          Teaching test design in Java language.
     </li>
     <li>
-         Creating a multilingual program.
+        How to make a Timer in Android Studio.
     </li>
     <li>
          Creating a Scroll view in the program
