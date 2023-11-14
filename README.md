@@ -1,3 +1,9 @@
+## <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
+  <ul>
+        
+       Applicable on all Android operating systems
+          
+  </ul> 
 
  </ul>  
           <code><strong>The purpose of making this application is to familiarize with the following:</strong></code>
