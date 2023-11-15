@@ -14,6 +14,7 @@ public class splashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         splash_Screen();
     }
+//    This method is used to implement the introduction page at the beginning of our app.
     public void splash_Screen(){
         new Handler().postDelayed(new Runnable() {
             @Override
