@@ -5,4 +5,67 @@
     <string name="exam">آزمون</string>
     <string name="Education">آموزش</string>
     <string name="about_us">درباره ما</string>
+    <string name="next_question">ســـــــــوال بعــــــد</string>
+
+    <string name="question1">"1) در برخورد راه اصلی با راه فرعی تقدم عبور با وسیله ای است که..."</string>
+    <string name="answer1_1">"از راه اصلی عبور می کند"</string>
+    <string name="answer1_2">"از راه فرعی عبور می کند"</string>
+    <string name="answer1_3">"به سمت راست گردش می کند"</string>
+    <string name="answer1_4">"در طرف راست وسیله نقلیه دیگر است"</string>
+
+    <string name="question2">"2) مفهوم تصویر زیر چیست ؟"</string>
+    <string name="answer2_1">"پایان شهر"</string>
+    <string name="answer2_2">"از مشهد خارج شدید"</string>
+    <string name="answer2_3">"محدوده مشهد به پایان رسید"</string>
+    <string name="answer2_4">"مشهد ممنوع"</string>
+
+    <string name="question3">"3) وقتی در حین رانندگی حواس شما متوجه چیز های دیگر باشد اینکار :"</string>
+    <string name="answer3_1">"تصمیم سریع و عکس العمل به موقع را از شما خواهد گرفت"</string>
+    <string name="answer3_2">"قادر به تصمیم گیری نخواهید بود"</string>
+    <string name="answer3_3">"عکس العمل از خودتان نشان نخواهید داد"</string>
+    <string name="answer3_4">"ممکن است مسیر خود را اشتباه بروید"</string>
+
+    <string name="question4">"4) حالت و وضعیت شما در رانندگی به چه عواملی بستگی دارد"</string>
+    <string name="answer4_1">"رفتارهای مثبت ترافیکی"</string>
+    <string name="answer4_2">"دانش رانندگی و مهارت"</string>
+    <string name="answer4_3">"تفکر ، موقعیت ، دانش قبلی ، ادب و نزاکت"</string>
+    <string name="answer4_4">"پای بندی به مقررات"</string>
+
+    <string name="question5">"5) به هنگام خروج از پارک چه اعمالی را باید انجام داد ؟"</string>
+    <string name="answer5_1">"از آیینه ها استفاده نمود و برای کنترل نهایی سر را به سمت چپ برگردانده و عقب را نگاه کنید"</string>
+    <string name="answer5_2">"چنانچه لازم است سایر رانندگان آهسته برانند به آنها علامت دهید"</string>
+    <string name="answer5_3">"اگر اتومبیل دیگری در مقابل شما پارک نشده به عقب برنگردید"</string>
+    <string name="answer5_4">"علاوه بر استفاده از راهنما با دست علامت دهید"</string>
+
+    <string name="question6">"6) علائم هشدار دهنده برای خطر به چه شکلی ترسیم می گردند ؟"</string>
+    <string name="answer6_1">"هشت گوشه"</string>
+    <string name="answer6_2">"دایره ای"</string>
+    <string name="answer6_3">"لوزی شکل"</string>
+    <string name="answer6_4">"مثلث"</string>
+
+    <string name="question7">"7) در راه های شیب دار کوهستانی که در آنها عبور دو وسیله نقلیه کنارهم مشکل می باشد حق تقدم عبور با …… ؟"</string>
+    <string name="answer7_1">"وسیله نقلیه ای که در سرازیری در حال حرکت است"</string>
+    <string name="answer7_2">"حق تقدم با وسیله نقلیه سبک است"</string>
+    <string name="answer7_3">"وسیله نقلیه ای در سربالایی در حال حرکت است"</string>
+    <string name="answer7_4">"حق تقدم با وسیله نقلیه سنگین است"</string>
+
+    <string name="question8">"8) در هنگام شب رانندگی می کنید و نور بالای چراغ اتومبیل هایی که از روبرو می آیند چشم های شما را خیره می کند چه کار باید انجام دهید ؟"</string>
+    <string name="answer8_1">"به طور مستقیم به نور چراغ اتومبیل روبرو نگاه نکنید و از نگاه کردن به سمت راست خود داری کنید."</string>
+    <string name="answer8_2">"به طور مستقیم به نور چراغ روبرو نگاه نکنید و سمت راست راه را نگاه کنید و از گوشه چشم به اتومبیل روبرو توجه کنید"</string>
+    <string name="answer8_3">"نور بالای اتومبیل را روشن کنید و به وسیله نقلیه مقابل توجه نکنید"</string>
+    <string name="answer8_4">"هیچکدام"</string>
+
+    <string name="question9">"9) بر روی یک راه لغزنده قسمت عقب اتومبیل شما به سمت راست می لغزد چکار باید انجام دهید ؟"</string>
+    <string name="answer9_1">"از کلاچ و ترمز به طور همزمان استفاده کنید"</string>
+    <string name="answer9_2">"ترمز کنید و فرمان را بچرخانید"</string>
+    <string name="answer9_3">"با دقت و مراقبت فرمان را به سمت چپ بچرخانید"</string>
+    <string name="answer9_4">"با دقت و مراقبت فرمان را به سمت راست بچرخانید"</string>
+
+    <string name="question10">"10) کدام تابلوی راهنمایی و رانندگی زیر بیان گر کاهش خطوط عبور می باشد ؟"</string>
+
+    <string name="question11">"11) به هنگام رانندگی در شرایط یخبندان فرمان به راحتی می چرخد چرخ ها به طرفین می پیچد علت آن چیست ؟"</string>
+    <string name="answer11_1">"چرخ ها اصطحکاک مطلوبی با راه ندارند"</string>
+    <string name="answer11_2">"چرخ ها با راه اصطحکاک بهتری دارند"</string>
+    <string name="answer11_3">"چرخ ها خیلی نرم هستند"</string>
+    <string name="answer11_4">"چرخ ها خیلی سفت هستند"</string>
 </resources>
