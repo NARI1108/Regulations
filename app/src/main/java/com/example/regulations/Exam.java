@@ -20,6 +20,7 @@ public class Exam extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam);
         findViews();
+        setTexts();
     }
 //    This method actually connects views and layers from an XML layer to this layer.
     public void findViews(){
@@ -44,5 +45,13 @@ public class Exam extends AppCompatActivity {
 
         layout_1 = findViewById(R.id.layout_1);
         layout_2 = findViewById(R.id.layout_2);
+    }
+//    This method is actually for setting the texts from the strings section on this layer.
+    public void setTexts(){
+        txt_questions.setText(R.string.question1);
+        txt_answer1.setText(R.string.answer1_1);
+        txt_answer2.setText(R.string.answer1_2);
+        txt_answer3.setText(R.string.answer1_3);
+        txt_answer4.setText(R.string.answer1_4);
     }
 }
