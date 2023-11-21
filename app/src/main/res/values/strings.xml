@@ -68,4 +68,5 @@
     <string name="answer11_2">"چرخ ها با راه اصطحکاک بهتری دارند"</string>
     <string name="answer11_3">"چرخ ها خیلی نرم هستند"</string>
     <string name="answer11_4">"چرخ ها خیلی سفت هستند"</string>
+    <string name="result">"متاسفانه زمان شما به پایان رسید"</string>
 </resources>
