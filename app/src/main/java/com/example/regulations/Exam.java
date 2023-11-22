@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
 import java.util.Objects;
 
 public class Exam extends AppCompatActivity {
@@ -79,4 +80,12 @@ public class Exam extends AppCompatActivity {
             }
         }, 1000);
     }
+//    The method of creating time in seconds and minutes.
+    public String formatTime(long time){
+        long second = (time/1000);
+        long minute = (second/60);
+        second=(second%60);
+        return ": زمان باقی مانده"+String.format(Locale.ENGLISH,"%02d",second)+" : "+String.format(Locale.ENGLISH,"%02d",minute);
+    }
+
 }
