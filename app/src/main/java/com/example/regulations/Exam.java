@@ -25,12 +25,14 @@ public class Exam extends AppCompatActivity {
     LinearLayout layout_1, layout_2;
     long time = 1200000;
     int number=1;
+    int incorrect=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam);
         findViews();
         btn_nextOnClick();
+        answer1_OnClick();
         setTexts();
         Timer();
     }
@@ -158,6 +160,51 @@ public class Exam extends AppCompatActivity {
                         break;
                     default:
                         result();
+                }
+            }
+        });
+    }
+//    When the user clicks on an option, this method is activated and performs different functions based on different conditions. For example,
+//    changing the color of options, enabling or disabling next buttons, etc.
+    public void answer1_OnClick(){
+        txt_answer1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btn_next.setEnabled(true);
+                btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
+                setEnable(false);
+                switch(number){
+                    case 1:
+                    case 11:
+                    case 5:
+                        txt_answer1.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 2:
+                        txt_answer2.setBackgroundColor(Color.parseColor("13dc74"));
+                        break;
+                    case 3:
+                        incorrect++;
+                        txt_answer1.setBackgroundColor(Color.parseColor("#dc1358"));
+                        txt_answer2.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 4:
+                    case 7:
+                        incorrect++;
+                        txt_answer1.setBackgroundColor(Color.parseColor("#dc1358"));
+                        txt_answer3.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 6:
+                    case 9:
+                        incorrect++;
+                        txt_answer1.setBackgroundColor(Color.parseColor("#dc1358"));
+                        txt_answer4.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 8:
+                        incorrect++;
+                        txt_answer1.setBackgroundColor(Color.parseColor("dc1358"));
+                        txt_answer2.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+
                 }
             }
         });
