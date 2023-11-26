@@ -34,6 +34,7 @@ public class Exam extends AppCompatActivity {
         btn_nextOnClick();
         answer1_OnClick();
         answer2_OnClick();
+        answer3_OnClick();
         setTexts();
         Timer();
     }
@@ -246,6 +247,46 @@ public class Exam extends AppCompatActivity {
                       txt_answer4.setBackgroundColor(Color.parseColor("#13dc74"));
                       break;
               }
+            }
+        });
+    }
+//    When the user clicks on an option, this method is activated and performs different functions based on different conditions. For example,
+//    changing the color of options, enabling or disabling next buttons, etc.
+    public void answer3_OnClick(){
+        txt_answer3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btn_next.setEnabled(true);
+                btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
+                setEnable(false);
+                switch(number){
+                    case 1:
+                    case 11:
+                    case 5:
+                    case 2:
+                        incorrect++;
+                        txt_answer3.setBackgroundColor(Color.parseColor("#dc1358"));
+                        txt_answer1.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 3:
+                    case 8:
+                        incorrect++;
+                        txt_answer3.setBackgroundColor(Color.parseColor("#dc1358"));
+                        txt_answer2.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 4:
+                        txt_answer3.setBackgroundColor(Color.parseColor("#dc1358"));
+                        break;
+                    case 6:
+                    case 9:
+                        incorrect++;
+                        txt_answer3.setBackgroundColor(Color.parseColor("#dc1358"));
+                        txt_answer4.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 7:
+                        txt_answer3.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                }
             }
         });
     }
