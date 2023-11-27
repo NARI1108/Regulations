@@ -33,6 +33,7 @@ public class Exam extends AppCompatActivity {
         findViews();
         btn_nextOnClick();
         txt_answersOnClick();
+        img_answersOnClick();
         setTexts();
         Timer();
     }
@@ -313,7 +314,47 @@ public class Exam extends AppCompatActivity {
             }
         });
     }
-
+//    This method in Android is for defining behaviors related to clicking on answer images in an application.
+    public void  img_answersOnClick(){
+        img_answer1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btn_next.setEnabled(true);
+                btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
+                img_answer1.setBackgroundColor(Color.parseColor("#13dc74"));
+            }
+        });
+        img_answer2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btn_next.setEnabled(true);
+                btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
+                incorrect++;
+                img_answer1.setBackgroundColor(Color.parseColor("#13dc74"));
+                txt_answer2.setBackgroundColor(Color.parseColor("#dc1358"));
+            }
+        });
+        img_answer3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btn_next.setEnabled(true);
+                btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
+                incorrect++;
+                img_answer1.setBackgroundColor(Color.parseColor("#13dc74"));
+                txt_answer3.setBackgroundColor(Color.parseColor("#dc1358"));
+            }
+        });
+        img_answer4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btn_next.setEnabled(true);
+                btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
+                incorrect++;
+                img_answer1.setBackgroundColor(Color.parseColor("#13dc74"));
+                txt_answer4.setBackgroundColor(Color.parseColor("#dc1358"));
+            }
+        });
+    }
 //    This time method is for counting time.
     private void Timer(){
         new Handler().postDelayed(new Runnable() {
