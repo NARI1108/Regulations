@@ -21,8 +21,8 @@ public class Exam extends AppCompatActivity {
     CoordinatorLayout coordinatorLayout;
     TextView txt_questions, txt_answer1, txt_answer2, txt_answer3, txt_answer4;
     Button btn_next;
-    ImageView img_questions, img_question1, img_question2, img_question3, img_question4;
-    LinearLayout layout_1, layout_2;
+    ImageView img_questions,  img_answer1,  img_answer2,  img_answer3,  img_answer4;
+    LinearLayout layout_1, layout_2;4
     long time = 1200000;
     int number=1;
     int incorrect=0;
@@ -32,10 +32,7 @@ public class Exam extends AppCompatActivity {
         setContentView(R.layout.activity_exam);
         findViews();
         btn_nextOnClick();
-        answer1_OnClick();
-        answer2_OnClick();
-        answer3_OnClick();
-        answer4_OnClick();
+        txt_answersOnClick();
         setTexts();
         Timer();
     }
@@ -55,10 +52,10 @@ public class Exam extends AppCompatActivity {
 
         img_questions = findViewById(R.id.img_questions);
 
-        img_question1 = findViewById(R.id.img_answer1);
-        img_question2 = findViewById(R.id.img_answer2);
-        img_question3 = findViewById(R.id.img_answer3);
-        img_question4 = findViewById(R.id.img_answer4);
+         img_answer1 = findViewById(R.id.img_answer1);
+         img_answer2 = findViewById(R.id.img_answer2);
+         img_answer3 = findViewById(R.id.img_answer3);
+         img_answer4 = findViewById(R.id.img_answer4);
 
         layout_1 = findViewById(R.id.layout_1);
         layout_2 = findViewById(R.id.layout_2);
@@ -169,14 +166,14 @@ public class Exam extends AppCompatActivity {
     }
 //    When the user clicks on an option, this method is activated and performs different functions based on different conditions. For example,
 //    changing the color of options, enabling or disabling next buttons, etc.
-    public void answer1_OnClick(){
+    protected void txt_answersOnClick() {
         txt_answer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 btn_next.setEnabled(true);
                 btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
                 setEnable(false);
-                switch(number){
+                switch (number) {
                     case 1:
                     case 11:
                     case 5:
@@ -211,56 +208,47 @@ public class Exam extends AppCompatActivity {
                 }
             }
         });
-    }
-
-//    When the user clicks on an option, this method is activated and performs different functions based on different conditions. For example,
-//    changing the color of options, enabling or disabling next buttons, etc.
-    public void answer2_OnClick(){
         txt_answer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              btn_next.setEnabled(true);
-              btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
-              setEnable(false);
-              switch(number){
-                  case 1:
-                  case 11:
-                  case 5:
-                  case 2:
-                      incorrect++;
-                      txt_answer2.setBackgroundColor(Color.parseColor("#dc1358"));
-                      txt_answer1.setBackgroundColor(Color.parseColor("#13dc74"));
-                      break;
-                  case 3:
-                  case 8:
-                      txt_answer2.setBackgroundColor(Color.parseColor("#13dc74"));
-                      break;
-                  case 4:
-                  case 7:
-                      incorrect++;
-                      txt_answer2.setBackgroundColor(Color.parseColor("#dc1358"));
-                      txt_answer3.setBackgroundColor(Color.parseColor("#13dc74"));
-                      break;
-                  case 6:
-                  case 9:
-                      incorrect++;
-                      txt_answer2.setBackgroundColor(Color.parseColor("#dc1358"));
-                      txt_answer4.setBackgroundColor(Color.parseColor("#13dc74"));
-                      break;
-              }
+                btn_next.setEnabled(true);
+                btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
+                setEnable(false);
+                switch (number) {
+                    case 1:
+                    case 11:
+                    case 5:
+                    case 2:
+                        incorrect++;
+                        txt_answer2.setBackgroundColor(Color.parseColor("#dc1358"));
+                        txt_answer1.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 3:
+                    case 8:
+                        txt_answer2.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 4:
+                    case 7:
+                        incorrect++;
+                        txt_answer2.setBackgroundColor(Color.parseColor("#dc1358"));
+                        txt_answer3.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                    case 6:
+                    case 9:
+                        incorrect++;
+                        txt_answer2.setBackgroundColor(Color.parseColor("#dc1358"));
+                        txt_answer4.setBackgroundColor(Color.parseColor("#13dc74"));
+                        break;
+                }
             }
         });
-    }
-//    When the user clicks on an option, this method is activated and performs different functions based on different conditions. For example,
-//    changing the color of options, enabling or disabling next buttons, etc.
-    public void answer3_OnClick(){
         txt_answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 btn_next.setEnabled(true);
                 btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
                 setEnable(false);
-                switch(number){
+                switch (number) {
                     case 1:
                     case 11:
                     case 5:
@@ -290,17 +278,13 @@ public class Exam extends AppCompatActivity {
                 }
             }
         });
-    }
-//    When the user clicks on an option, this method is activated and performs different functions based on different conditions. For example,
-//    changing the color of options, enabling or disabling next buttons, etc.
-    public void answer4_OnClick(){
         txt_answer4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 btn_next.setEnabled(true);
                 btn_next.setBackgroundColor(getResources().getColor(R.color.btnEnable));
                 setEnable(false);
-                switch(number){
+                switch (number) {
                     case 1:
                     case 2:
                     case 5:
@@ -329,6 +313,7 @@ public class Exam extends AppCompatActivity {
             }
         });
     }
+
 //    This time method is for counting time.
     private void Timer(){
         new Handler().postDelayed(new Runnable() {
@@ -354,5 +339,4 @@ public class Exam extends AppCompatActivity {
         second=(second%60);
         return ": زمان باقی مانده"+String.format(Locale.ENGLISH,"%02d",second)+" : "+String.format(Locale.ENGLISH,"%02d",minute);
     }
-
 }
