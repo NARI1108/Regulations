@@ -7,13 +7,12 @@ import android.app.AlertDialog;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import java.util.Locale;
 import java.util.Objects;
 
@@ -22,7 +21,7 @@ public class Exam extends AppCompatActivity {
     TextView txt_questions, txt_answer1, txt_answer2, txt_answer3, txt_answer4;
     Button btn_next;
     ImageView img_questions,  img_answer1,  img_answer2,  img_answer3,  img_answer4;
-    LinearLayout layout_1, layout_2;4
+    LinearLayout layout_1, layout_2;
     long time = 1200000;
     int number=1;
     int incorrect=0;
@@ -354,6 +353,44 @@ public class Exam extends AppCompatActivity {
                 txt_answer4.setBackgroundColor(Color.parseColor("#dc1358"));
             }
         });
+    }
+//    This method is used in Android to enable or disable the ability to edit and change values in four text fields (txt_answer1 to txt_answer4).
+    public void setEnable(boolean b){
+       txt_answer1.setEnabled(b);
+       txt_answer2.setEnabled(b);
+       txt_answer3.setEnabled(b);
+       txt_answer4.setEnabled(b);
+    }
+    public void result(){
+        if(incorrect>=4){
+            String result = "شما"+incorrect+"غلط داشتید و متاسفانه رد شدید.";
+            Snackbar snackbar = Snackbar.make(coordinatorLayout,result,Snackbar.LENGTH_INDEFINITE);
+            snackbar.setAction("تلاش دوباره", new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    finish();
+                }
+            });
+            View snackView = snackbar.getView();
+            snackView.setBackgroundColor(Color.BLACK);
+            TextView textView = snackView.findViewById(com.google.android.material.R.id.snackbar_text);
+            textView.setTextColor(Color.RED);
+            snackbar.show();
+        }else if(incorrect<4){
+            String result="تبریک می گوییم شما قبول شدید.";
+            Snackbar snackbar = Snackbar.make(coordinatorLayout,result,Snackbar.LENGTH_INDEFINITE);
+            snackbar.setAction("باشه", new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    finish();
+                }
+            });
+            View snackView = snackbar.getView();
+            snackView.setBackgroundColor(Color.BLACK);
+            TextView textView = snackView.findViewById(com.google.android.material.R.id.snackbar_text);
+            textView.setTextColor(Color.GREEN);
+            snackbar.show();
+        }
     }
 //    This time method is for counting time.
     private void Timer(){
