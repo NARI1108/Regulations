@@ -361,6 +361,7 @@ public class Exam extends AppCompatActivity {
        txt_answer3.setEnabled(b);
        txt_answer4.setEnabled(b);
     }
+//    This method is used in Android to display the results of a test.
     public void result(){
         if(incorrect>=4){
             String result = "شما"+incorrect+"غلط داشتید و متاسفانه رد شدید.";
