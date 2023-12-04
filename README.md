@@ -8,7 +8,10 @@
 ## ✨Regulations Vidoe
 
 ## <code><strong>About App</strong></code> ##
-
+<p>
+  This app actually teaches questions and signs and traffic signs for new students. We implemented this app in the simplest graphic design that I wanted to implement in the chapter related to it. You can 
+  improve this app in terms of graphic design.
+</p>
 ## <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
 
   <ul>
