@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF9800</color>
+    <color name="crimson">#7c0734</color>
+    <color name="dark_orange">#ab5022</color>
+    <color name="dark_purple">#150d1d</color>
+    <color name="navy_blue">#150d1d</color>
+    <color name="btnEnable">#e7e777</color>
+    <color name="btnDisable">#949494</color>
 </resources>
