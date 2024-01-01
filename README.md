@@ -7,7 +7,7 @@
 [<img alt="github" src="https://img.shields.io/badge/github-NARI1108/PASSWORD-8da0cb?logo=github" height="20">](https://github.com/NARI1108/Regulations)
 [![Apache](https://img.shields.io/badge/license-GNU-blue.svg)](https://github.com/NARI1108/Regulations/blob/master/LICENSE)
 [![Regulations](https://img.shields.io/badge/Vidoe-Regulations-red.svg)]()
-
+![GitHub language count](https://img.shields.io/github/languages/count/NARI1108/Regulations?color=pink)
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-TTuec9pNRq7qqlMnXP9y2iLJxF4Mn7LdYSrHmb9eZ9B27-GefSWbuKbtBB_QOYVLZ6Q&usqp=CAU" width="7000" height="350">
 
